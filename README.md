@@ -1,4 +1,4 @@
-# OpenRefine introduction workshop
+# OpenRefine Introduction Workshop
 OpenRefine introduction workshop, a practical workshop to learn how to work with OpenRefine and Wikidata at a basic level.
 
 ## To process: workshop [outline and notes](outline-and-notes.md): 
