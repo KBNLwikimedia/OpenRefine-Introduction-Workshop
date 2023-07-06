@@ -1,14 +1,15 @@
 # Workshop outline and notes
+Latest update: xx August 2023
 
------------- Outline workshop------------
+## Outline workshop------------
 Korte introductie over workshop + mezelf
 Weet zelf het nodige, maar ben zeker geen volleerd expert! 
 
 Ik stuurde jullie eerder al 2 documenten
-* Overzicht online les- en hulpmaterialen OpenRefine - https://plein.kb.nl/documents/140463
-* Werkmaterialen introductieworkshop OpenRefine, KB, 4 juni 2023 - https://plein.kb.nl/documents/140679 - staan links + data in die we in de workshop gaan gebruiken
+* [Overzicht online les- en hulpmaterialen OpenRefine]() - https://plein.kb.nl/documents/140463
+* [Werkmaterialen introductieworkshop OpenRefine, KB, 4 juni 2023]() - https://plein.kb.nl/documents/140679 - staan links + data in die we in de workshop gaan gebruiken
 
-------------Context workshop ------------
+## Context workshop ------------
 In deze workshop gaan we aan de slag met de winnaars van de Halewijnprijs
 - Website: https://www.halewijnprijs.nl/  (tabblad Winnaars)
 - Wikipedia: https://nl.wikipedia.org/wiki/Halewijnprijs 
@@ -18,18 +19,26 @@ De Halewijnprijs is een Nederlandse literatuurprijs
 - Voorbeeld van een Wikidata-item over een literatuurprijs incl. de winnaars: P.C. Hooft-prijs - https://www.wikidata.org/wiki/Q1379623 
 - Voorbeeld Wikidata-item over een winnaar van een literatuurprijs: Theun de Vries - https://www.wikidata.org/wiki/Q2143934 
 
--------- Uitleg over de 4 OR-functies ------------ 
+##  Uitleg over de 4 OR-functies ------------ 
 - Manipulatie/transformatie van data
 - Reconciliatie tegen Wikidata, VIAF/NTA
 - Extra data ophalen uit Wikidata, VIAF/NTA
 - Uploaden naar Wikidata
 
-------- Werkvormen ------------ 
+## Werkvormen ------------ 
 - Demos door Olaf
 - Simultaan meedoen door cursisten
 - Zelfsandige opdrachten door cursisten
 
 Tip: Zet 5G Wifi access point op in je smartphone om slechte KB-wifi te omzeilen
+
+##  Ready to go? ------
+Wifi werkt?
+Laptop opgeladen/voeding? 
+PDF Werkmaterialen introductieworkshop OpenRefine bij de hand?
+Start OpenRefine op
+Zet leeg Excel-blad klaar
+
 
 ------ Opstarten OR ------------ 
 - Leg interface uit : Create project - Open (bestaand) project - Import project - Language settings
@@ -37,7 +46,7 @@ Tip: Zet 5G Wifi access point op in je smartphone om slechte KB-wifi te omzeilen
 - Zet deze workspace directory NIET op OneDrive of in de MS-cloud i.v.m. syncing issues
 - Linksonder: Version 3.7.2 [f7ad526]
 
------ Aanmaken OR project------------ 
+## Aanmaken OR project
 We gaan een project maken met data van de winnaars van de Halewijnprijs, zoals die vernoemd zijn op https://www.halewijnprijs.nl/ (tabblad Winnaars). 
 
 Copy-paste deze data naar klembord. 
@@ -66,7 +75,7 @@ Pas kolomnamen aan - Jaar + Winnaar
 
 === Laat cursisten bovenstaande beide manieren om een project te maken nu zelf nadoen ===
 
------------- Opschonen data------------ 
+## Opschonen data------------ 
 
 Opschonen data: kolommen Jaar en Winnaar: Edit cells- > Common transform --> Trim trailing and leading whitespaces + Collapse consecutive whitespaces
 Je kunt dit via de kolom "All --> Edit all columns" (links) ook voor alle kolommen tegelijk doen
@@ -80,7 +89,7 @@ Oh nee, dit wilden we niet --> toon Undo/Redo-tabblad (links)
 
 In de hierna nog volgende uitleg zal ik aldoende meer datatransformaties de revu laten passeren
 
------ Reconciliatie tegen Wikidata------------ 
+## Reconciliatie tegen Wikidata------------ 
 We gaan nu reconnen tegen Wikidata 
 - namen opzoeken in Wikidata, van strings naar things
 - Daarmee kun je ook extra/externe data ophalen uit Wikidata
@@ -107,7 +116,7 @@ Haal manifeste Qids op: Reconcile --> Add entity identifiers column. Kolomnaam =
 Deze kolom met Q-ids kun je ook reconnen tegen Wikidata! --> Laat zien  --> Kolom behouden, want straks gaan we de andere kolom 'Winnaar' leeggooien om de reconnen tegen de NTA
 Haal recon matches weer weg: Reconcile --> Actions --> Clear reconcilation data
 
---------- Extra/externe data ophalen uit Wikidata ------------ 
+## Extra/externe data ophalen uit Wikidata ------------ 
 We willen nu extra data van deze schrijvers ophalen uit Wikidata
 - Afbeelding: https://www.wikidata.org/wiki/Property:P18
 - Geboorteplaats https://www.wikidata.org/wiki/Property:P19  
@@ -123,7 +132,7 @@ Licht resultataten toe,
 * Werk verder in record-view
 Kort geboortedatum in van 1962-01-01T00:00:00Z naar 1962-01-01. Dit doe je als volgt: Edit column --> split into several columns, separator = T, remove 2e kolom, renmame kolom 'geboortedatum 1' --> 'geboortedatum'
 
---------- Meervoudige cellen samen tot lijst ------------ 
+##  Meervoudige cellen samen tot lijst ------------ 
 Voeg meervoudige beroepen samen tot lijst, met " - " als separator
 Edit cells --> Join multi-valued cells, separtor = " - "
 Nog steeds 32 records, maar 36 rows
@@ -133,20 +142,20 @@ Herhaal dit voor geboortedatum (Rudi Hermans heeft er twee)--> 32 rows
 == Opdracht: maak van de geboortedatum 3 kolommen: YY-MM-DD ==
 == Opdracht: splits alle beroepen in aparte kolommen ==
 
---------- Facetten aanbrengen ------------ 
+## Facetten aanbrengen ------------ 
 Selecteer de de auteurs zonder geboorteplaats -->  Facet by star --> tabblad "Facet/Filter" links --> Starred Rows --> true (8)
 We hebben nu een lijstje van 8 auteurs zonder geboorteplaats
 
---------- OPTIONEEL: Geboorteplaatsen toevoegen ------------ 
+## OPTIONEEL: Geboorteplaatsen toevoegen ------------ 
 Geboorteplaatsen opzoeken in Wikipedia en andere bronnen
-- Peter Drehmanns = Roermond (bron: https://nl.wikipedia.org/wiki/Peter_Drehmanns)
-- Fred Papenhove = Den Haag (bron: https://www.singeluitgeverijen.nl/auteur/fred-papenhove/ )
-- Stijn van der Loo = Eindhoven (bron: https://www.brabantcultureel.nl/2019/10/13/stijn-van-der-loo-stopt-dementie-scheiden-en-een-midlifecrisis-in-een-verhaal/ )
-- Adriaan Jaeggi = Wassenaar (bron: https://nl.wikipedia.org/wiki/Adriaan_Jaeggi)
-- Laurens Spoor = Den Haag (bron: https://theaterencyclopedie.nl/wiki/Laurens_Spoor )
-- Gijs IJlander = Alkmaar (bron: https://nl.wikipedia.org/wiki/Gijs_IJlander)
-- André Janssens = Sint-Amandsberg (bron: https://www.dbnl.org/tekst/_ons003198701_01/_ons003198701_01_0063.php)
-- Jan Huyskens = Horn (bron: http://streektaalzang.nl/strk/limb/limbjhun.htm)
+* Peter Drehmanns = Roermond (bron: https://nl.wikipedia.org/wiki/Peter_Drehmanns)
+* Fred Papenhove = Den Haag (bron: https://www.singeluitgeverijen.nl/auteur/fred-papenhove/ )
+* Stijn van der Loo = Eindhoven (bron: https://www.brabantcultureel.nl/2019/10/13/stijn-van-der-loo-stopt-dementie-scheiden-en-een-midlifecrisis-in-een-verhaal/ )
+* Adriaan Jaeggi = Wassenaar (bron: https://nl.wikipedia.org/wiki/Adriaan_Jaeggi)
+* Laurens Spoor = Den Haag (bron: https://theaterencyclopedie.nl/wiki/Laurens_Spoor )
+* Gijs IJlander = Alkmaar (bron: https://nl.wikipedia.org/wiki/Gijs_IJlander)
+* André Janssens = Sint-Amandsberg (bron: https://www.dbnl.org/tekst/_ons003198701_01/_ons003198701_01_0063.php)
+* Jan Huyskens = Horn (bron: http://streektaalzang.nl/strk/limb/limbjhun.htm)
 
 - Voeg handmatig deze geboortplaatsen toe (of alleen de eerste 4 of zo)
 - Recon deze plaatsen (Nederlandse gemeente, of Stad)
@@ -154,7 +163,7 @@ Geboorteplaatsen opzoeken in Wikipedia en andere bronnen
 - Gereconde plaatsen staan nu in de totaaltabel
 - Haal facet-sterren handmatig weg
 
---------- Afbeeldingen: van naam naar URL ------------ 
+## Afbeeldingen: van naam naar URL ------------ 
 Maak van afbeelding een volledige URL op Commons mbv GREL-expressie
 Eva Meijer 2018.jpg --> https://commons.wikimedia.org/wiki/File:Eva_Meijer_2018.jpg
 Kolom: afbeelding --> Edit column --> Add column based on this column
@@ -164,7 +173,7 @@ Je krijgt nu halvegare URLs door de spaties in de bestandsnamen
 Fix: Edit cells --> Replace --> vervang spatie ( ) door underscore (_)
 Klik op een paar URLs om resultaat te checken
 
-------------Recon tegen de NTA ---------------------------
+## Recon tegen de NTA ---------------------------
 Haal alle recon-data uit de kolom Winnaar weg (reset)
 Reconcile --> Actions --> Clear recon data
 Kolom bevat nu weer de kale strings waarmee we begonnen zijn
@@ -178,7 +187,7 @@ Check NTA-suggesties tegen de geboortedatum die we eerder uit Wikidatas hebben o
 Kies beste matches voor elke auteur
 Haal NTA-URIs op (data.bibliotheken.nl)--> Reconcile --> Add entity identifiers column. Kolomnaam = NTAuri
 
-------------OPTIONEEL, GEAVANCEERD, ALS ER TIJD OVER IS ------------ 
+## OPTIONEEL, GEAVANCEERD, ALS ER TIJD OVER IS ------------ 
 Voorbeeld NTA URI: http://data.bibliotheken.nl/doc/thes/p075253429
 Je kunt er nu een JSON-uri van maken door er .json achter te plakken: http://data.bibliotheken.nl/doc/thes/p075253429.json
 JSON url : Edit columns --> Add column based on this columns 
@@ -189,7 +198,7 @@ GREL: value.parseJson()["@graph"][1]["sameAs"].join(" - ")
 Kolomnaan = NTAJsonExternalIDs
 Daarna op deze kolom: Edit columns --> Split into several columns 
 
-------------Winaars toevoegen aan Q-item Halewijn-prijs ---------------------------
+## Winaars toevoegen aan Q-item Halewijn-prijs ---------------------------
 We willen (de Qitems van) alle winnaars toevegen aan Q-item over Halewijn-prijs
 Laat eerst voorbeld item met prijswinnaars zien: PChooftprijs - https://www.wikidata.org/wiki/Q1379623
 Bespreek opbouw van dit item  
@@ -197,7 +206,7 @@ Winnaar: https://www.wikidata.org/wiki/Property:P1346
 Qualifier: tijdstip (jaartal) = https://www.wikidata.org/wiki/Property:P585
 Dit datastructuurtje willen we voor de Halewijnprijs nabouwen
 
-------------Opbouwen schema in OR ------------
+## Opbouwen schema in OR ------------
 We gaan een Wikidata OR schema bouwen
 Knop rechtsboven: Extensions Wikibase --> Edit wikibase schema
 Bespreek interface, groene strepen = gereconde kolommen
@@ -208,7 +217,7 @@ Laat tabbladen Issues en Preview zien
 Add reference: reference URL (P854) = https://www.halewijnprijs.nl/ 
 Check in de Preview of alles OK is
 
-------------Uploaden naar Wikidata ------------
+## Uploaden naar Wikidata ------------
 Extensions Wikibase --> Upload edits to Wikibase
 Login-scherm 
 Cursisten hebben account aangemaakt (maar zijn die al wel autoconfirmed!!??)
