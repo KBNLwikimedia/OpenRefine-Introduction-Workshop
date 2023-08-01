@@ -1,4 +1,4 @@
-# OpenRefine Introduction Workshop - outline and notes (in Dutch)
+# OpenRefine Introduction Workshop - Outline and notes (in Dutch)
 *Latest update: 3 August 2023*
 
 <img src="logos/OpenRefine_logo_color.png" width="300" align="right"/>
@@ -130,95 +130,93 @@ Licht resultataten toe
 * Kort geboortedatum in van 1962-01-01T00:00:00Z naar 1962-01-01. Dit doe je als volgt: Edit column --> Split into several columns, separator = T, remove 2e kolom, renmame kolom 'geboortedatum 1' --> 'geboortedatum'
 
 ##  Meervoudige cellen samen tot lijst 
-Voeg meervoudige beroepen samen tot lijst, met " - " als separator
-Edit cells --> Join multi-valued cells, separtor = " - "
-Nog steeds 32 records, maar 36 rows
-Herhaal dit voor geboorteplaats --> 33 rows
-Herhaal dit voor geboortedatum (Rudi Hermans heeft er twee)--> 32 rows
+* Voeg meervoudige beroepen samen tot lijst, met " - " als separator: Edit cells --> Join multi-valued cells, separtor = " - "
+* Nog steeds 32 records, maar 36 rows
+* Herhaal dit voor Geboorteplaats --> 33 rows
+* Herhaal dit voor Geboortedatum (Rudi Hermans heeft er twee)--> 32 rows
 
 **Opdracht  voor cursisten: Maak van de geboortedatum 3 kolommen: YY-MM-DD**
+
 **Opdracht voor cursisten: Splits alle beroepen in aparte kolommen**
 
 ## Facetten aanbrengen 
-Selecteer de de auteurs zonder geboorteplaats -->  Facet by star --> tabblad "Facet/Filter" links --> Starred Rows --> true (8)
-We hebben nu een lijstje van 8 auteurs zonder geboorteplaats
+* Selecteer de de auteurs zonder geboorteplaats -->  Facet by star --> tabblad "Facet/Filter" links --> Starred Rows --> true (8)
+* We hebben nu een lijstje van 8 auteurs zonder geboorteplaats
 
 ## OPTIONEEL: Geboorteplaatsen toevoegen
-Geboorteplaatsen opzoeken in Wikipedia en andere bronnen
-* Peter Drehmanns = Roermond (bron: https://nl.wikipedia.org/wiki/Peter_Drehmanns)
-* Fred Papenhove = Den Haag (bron: https://www.singeluitgeverijen.nl/auteur/fred-papenhove/ )
-* Stijn van der Loo = Eindhoven (bron: https://www.brabantcultureel.nl/2019/10/13/stijn-van-der-loo-stopt-dementie-scheiden-en-een-midlifecrisis-in-een-verhaal/ )
-* Adriaan Jaeggi = Wassenaar (bron: https://nl.wikipedia.org/wiki/Adriaan_Jaeggi)
-* Laurens Spoor = Den Haag (bron: https://theaterencyclopedie.nl/wiki/Laurens_Spoor )
-* Gijs IJlander = Alkmaar (bron: https://nl.wikipedia.org/wiki/Gijs_IJlander)
-* André Janssens = Sint-Amandsberg (bron: https://www.dbnl.org/tekst/_ons003198701_01/_ons003198701_01_0063.php)
-* Jan Huyskens = Horn (bron: http://streektaalzang.nl/strk/limb/limbjhun.htm)
+* Geboorteplaatsen opzoeken in Wikipedia en andere bronnen
+  * Peter Drehmanns = Roermond ([bron](https://nl.wikipedia.org/wiki/Peter_Drehmanns))
+  * Fred Papenhove = Den Haag ([bron](https://www.singeluitgeverijen.nl/auteur/fred-papenhove/ )
+  * Stijn van der Loo = Eindhoven ([bron](https://www.brabantcultureel.nl/2019/10/13/stijn-van-der-loo-stopt-dementie-scheiden-en-een-midlifecrisis-in-een-verhaal/))
+  * Adriaan Jaeggi = Wassenaar ([bron](https://nl.wikipedia.org/wiki/Adriaan_Jaeggi))
+  * Laurens Spoor = Den Haag ([bron](https://theaterencyclopedie.nl/wiki/Laurens_Spoor))
+  * Gijs IJlander = Alkmaar ([bron](https://nl.wikipedia.org/wiki/Gijs_IJlander))
+  * André Janssens = Sint-Amandsberg ([bron](https://www.dbnl.org/tekst/_ons003198701_01/_ons003198701_01_0063.php))
+  * Jan Huyskens = Horn ([bron](http://streektaalzang.nl/strk/limb/limbjhun.htm))
 
-- Voeg handmatig deze geboortplaatsen toe (of alleen de eerste 4 of zo)
-- Recon deze plaatsen (Nederlandse gemeente, of Stad)
-- Pas filtering/facet aan --> Facets --> Knop "Remove all" (links bovenaan)
-- Gereconde plaatsen staan nu in de totaaltabel
-- Haal facet-sterren handmatig weg
+*  Voeg handmatig deze geboortplaatsen toe (of alleen de eerste 4 of zo)
+* Reconcilieer deze plaatsen tegen Wikidata (Nederlandse gemeente, of Stad)
+* Pas filtering/facet aan --> Facets --> Knop "Remove all" (links bovenaan)
+* Gereconcilieerde plaatsen staan nu in de totaaltabel
+* Haal facet-sterren handmatig weg
 
 ## Afbeeldingen: van naam naar URL
-Maak van afbeelding een volledige URL op Commons mbv GREL-expressie
-Eva Meijer 2018.jpg --> https://commons.wikimedia.org/wiki/File:Eva_Meijer_2018.jpg
-Kolom: afbeelding --> Edit column --> Add column based on this column
-GREL: "https://commons.wikimedia.org/wiki/File:" + value (een soort CONCAT-functie)
-Kolomnaam = CommonsURL
+* Maak van afbeelding een volledige URL op Commons m.b.v. een GREL-expressie. Bv: Eva Meijer 2018.jpg --> https://commons.wikimedia.org/wiki/File:Eva_Meijer_2018.jpg
+* Kolom: afbeelding --> Edit column --> Add column based on this column
+* GREL: "https://commons.wikimedia.org/wiki/File:" + value (een soort CONCAT-functie)
+* Kolomnaam = CommonsURL
+
 Je krijgt nu halvegare URLs door de spaties in de bestandsnamen
-Fix: Edit cells --> Replace --> vervang spatie ( ) door underscore (_)
-Klik op een paar URLs om resultaat te checken
+* Fix: Edit cells --> Replace --> vervang spatie ( ) door underscore (_)
+* Klik op een paar URLs om resultaat te checken
 
 ## Reconciliatie tegen de NTA
-Haal alle recon-data uit de kolom Winnaar weg (reset)
-Reconcile --> Actions --> Clear recon data
-Kolom bevat nu weer de kale strings waarmee we begonnen zijn
-Reconcile --> Start reconciling --> NTA staat niet standaard in de lijst van recon services
-Discover services --> https://reconciliation-api.github.io/testbench/ --> Kies NTA (obv Termennetwerk NDE): 
-https://termennetwerk-api.netwerkdigitaalerfgoed.nl/reconcile/http://data.bibliotheken.nl/thesp/sparql 
-Kies "Reconcile against no particular type"
+* Haal alle recon-data uit de kolom Winnaar weg (reset): Reconcile --> Actions --> Clear recon data
+* Kolom bevat nu weer de kale strings waarmee we begonnen zijn
+* Reconcile --> Start reconciling --> NTA staat niet standaard in de lijst van recon services
+* Discover services --> https://reconciliation-api.github.io/testbench/ --> Kies NTA (obv Termennetwerk NDE): https://termennetwerk-api.netwerkdigitaalerfgoed.nl/reconcile/http://data.bibliotheken.nl/thesp/sparql 
+* Kies "Reconcile against no particular type"
  
-Licht resultaten na reconciliatie toe. Dit zijn dus URLs in het Termennetwerk, niet rechtstreeks van de NTA op data.b.nl
-Check NTA-suggesties tegen de geboortedatum die we eerder uit Wikidatas hebben opgehaald
-Kies beste matches voor elke auteur
-Haal NTA-URIs op (data.bibliotheken.nl)--> Reconcile --> Add entity identifiers column. Kolomnaam = NTAuri
+* Licht resultaten na reconciliatie toe. Dit zijn dus URLs in het Termennetwerk, niet rechtstreeks van de NTA op data.b.nl
+* Check NTA-suggesties tegen de geboortedatum die we eerder uit Wikidatas hebben opgehaald
+* Kies beste matches voor elke auteur
+* Haal NTA-URIs op (data.bibliotheken.nl): Reconcile --> Add entity identifiers column. Kolomnaam = NTAuri
 
 ## OPTIONEEL, GEAVANCEERD, ALS ER TIJD OVER IS
-Voorbeeld NTA URI: http://data.bibliotheken.nl/doc/thes/p075253429
-Je kunt er nu een JSON-uri van maken door er .json achter te plakken: http://data.bibliotheken.nl/doc/thes/p075253429.json
-JSON url : Edit columns --> Add column based on this columns 
-GREL = value + ".json". Kolomnaam = NTAjsonURL
-Daarna JSON-response ophalen : Add column by fetching URLs. Kolomnaam = NTAjsonResponse
-Op basis van deze JSON-respons: Extractie van externe IDs (ISNI, VIAF, Wikidata, DBNL) 
-GREL: value.parseJson()["@graph"][1]["sameAs"].join(" - ")
-Kolomnaan = NTAJsonExternalIDs
-Daarna op deze kolom: Edit columns --> Split into several columns 
+* Voorbeeld NTA URI: http://data.bibliotheken.nl/doc/thes/p075253429
+* Je kunt er nu een JSON URI van maken door er .json achter te plakken: http://data.bibliotheken.nl/doc/thes/p075253429.json
+* JSON url : Edit columns --> Add column based on this columns 
+* GREL = value + ".json". Kolomnaam = NTAjsonURL
+* Daarna JSON-response ophalen : Add column by fetching URLs. Kolomnaam = NTAjsonResponse
+*Op basis van deze JSON-respons: Extractie van externe IDs (ISNI, VIAF, Wikidata, DBNL) 
+* GREL: value.parseJson()["@graph"][1]["sameAs"].join(" - ")
+* Kolomnaan = NTAJsonExternalIDs
+* Daarna deze kolom opsplitsen in meerdere kolommen: Edit columns --> Split into several columns 
 
 ## Winaars toevoegen aan Q-item Halewijn-prijs
 We willen (de Qitems van) alle winnaars toevegen aan Q-item over Halewijn-prijs
-Laat eerst voorbeld item met prijswinnaars zien: PChooftprijs - https://www.wikidata.org/wiki/Q1379623
-Bespreek opbouw van dit item  
-Winnaar: https://www.wikidata.org/wiki/Property:P1346
-Qualifier: tijdstip (jaartal) = https://www.wikidata.org/wiki/Property:P585
-Dit datastructuurtje willen we voor de Halewijnprijs nabouwen
+* Laat eerst voorbeelditem met prijswinnaars zien: P.C. Hooftprijs - https://www.wikidata.org/wiki/Q1379623
+* Bespreek opbouw van dit item  
+* Eigenschap 'Winnaar': https://www.wikidata.org/wiki/Property:P1346
+* Qualifier: tijdstip (jaartal) = https://www.wikidata.org/wiki/Property:P585
+* Dit datastructuurtje willen we ook voor de Halewijnprijs nabouwen
 
 ## Opbouwen schema in OR
 We gaan een Wikidata OR schema bouwen
-Knop rechtsboven: Extensions Wikibase --> Edit wikibase schema
-Bespreek interface, groene strepen = gereconde kolommen
-Add item - https://www.wikidata.org/wiki/Q1570893 (Halewijnprijs)
-Add statement --> Sleep kolommen naar vakjes. Voeg P1346 (winnaar) met qualifier P585 (jaartal) toe
-Let op dat je de Winnaars-kolom met de Wikidata-info pakt, niet die met de VIAF/NTA info!! 
-Laat tabbladen Issues en Preview zien
-Add reference: reference URL (P854) = https://www.halewijnprijs.nl/ 
-Check in de Preview of alles OK is
+* Knop rechtsboven: Extensions Wikibase --> Edit wikibase schema
+* Bespreek interface, groene strepen = gereconcilieerde kolommen
+* Add item - https://www.wikidata.org/wiki/Q1570893 (Halewijnprijs)
+* Add statement --> Sleep kolommen naar vakjes. Voeg P1346 (winnaar) met qualifier P585 (jaartal) toe
+* Let op dat je de Winnaars-kolom met de Wikidata-info pakt, niet die met de VIAF/NTA info!! 
+* Laat tabbladen Issues en Preview zien
+* Add reference: reference URL (P854) = https://www.halewijnprijs.nl/ 
+* Check in de Preview of alles OK is
 
 ## Uploaden naar Wikidata
-Extensions Wikibase --> Upload edits to Wikibase
-Login-scherm 
-Cursisten hebben account aangemaakt (maar zijn die al wel autoconfirmed!!??)
-Laat 1 vd cusisten dit proberen, als het niet werkt kan ik de upload doen!
+* Extensions Wikibase (rechtsboven) --> Upload edits to Wikibase
+* Login-scherm met Wikimedia credentials
+* Cursisten hebben account aangemaakt (maar zijn die al wel autoconfirmed!!??)
+* Laat 1 vabn de cusisten dit proberen, als het niet werkt kan de cursusleider de upload doen!
 
 
 
