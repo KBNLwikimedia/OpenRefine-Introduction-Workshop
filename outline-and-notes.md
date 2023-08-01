@@ -135,7 +135,7 @@ Licht resultataten toe
 * Herhaal dit voor Geboorteplaats --> 33 rows
 * Herhaal dit voor Geboortedatum (Rudi Hermans heeft er twee)--> 32 rows
 
-**Opdracht  voor cursisten: Maak van de geboortedatum 3 kolommen: YY-MM-DD**
+**Opdracht  voor cursisten: Maak van de geboortedatum 3 apart kolommen: Jaar, Maand, Dag**
 
 **Opdracht voor cursisten: Splits alle beroepen in aparte kolommen**
 
