@@ -141,7 +141,7 @@ Licht resultataten toe
 * Selecteer de de auteurs zonder geboorteplaats -->  Facet by star --> tabblad "Facet/Filter" links --> Starred Rows --> true (8)
 * We hebben nu een lijstje van 8 auteurs zonder geboorteplaats
 
-## OPTIONEEL: Geboorteplaatsen toevoegen
+## Optioneel: Geboorteplaatsen toevoegen
 * Geboorteplaatsen opzoeken in Wikipedia en andere bronnen (zie ook de Werkmaterialen-PDF)
   * Peter Drehmanns = Roermond ([bron](https://nl.wikipedia.org/wiki/Peter_Drehmanns))
   * Fred Papenhove = Den Haag ([bron](https://www.singeluitgeverijen.nl/auteur/fred-papenhove/ )
@@ -179,7 +179,7 @@ Je krijgt nu halvegare URLs door de spaties in de bestandsnamen
 * Kies beste matches voor elke auteur
 * Haal NTA-URIs op (data.bibliotheken.nl): Reconcile --> Add entity identifiers column. Kolomnaam = NTAuri
 
-## OPTIONEEL, GEAVANCEERD, ALS ER TIJD OVER IS
+## Optioneel, geavanceerd (alleen indien er tijd over is)
 * Voorbeeld NTA URI: http://data.bibliotheken.nl/doc/thes/p075253429
 * Je kunt er nu een JSON URI van maken door er .json achter te plakken: http://data.bibliotheken.nl/doc/thes/p075253429.json
 * JSON url : Edit columns --> Add column based on this columns 
