@@ -1,19 +1,19 @@
 # Workshop outline and notes
-Latest update: xx August 2023
+*Latest update: 3 August 2023*
 
-## Outline workshop------------
-Korte introductie over workshop + mezelf
-Weet zelf het nodige, maar ben zeker geen volleerd expert! 
+## Outline workshop
+* Korte introductie over deze workshop
+* Korte achtergrond over de cursusleider - Weet zelf het nodige, maar ben zeker geen volleerd OpenRefine-expert. 
 
-Ik stuurde jullie eerder al 2 documenten
-* [Overzicht online les- en hulpmaterialen OpenRefine]() - https://plein.kb.nl/documents/140463
-* [Werkmaterialen introductieworkshop OpenRefine, KB, 4 juni 2023]() - https://plein.kb.nl/documents/140679 - staan links + data in die we in de workshop gaan gebruiken
+Twee documenten bij deze workshop:
+* [Overzicht online les- en hulpmaterialen OpenRefine_OJ22062023.pdf](https://raw.githubusercontent.com/KBNLwikimedia/OpenRefine-Introduction-Workshop/master/Overzicht%20online%20les-%20en%20hulpmaterialen%20OpenRefine_OJ22062023.pdf). Tutorials, cursussen, documentatie, howto’s, video’s etc. over Openrefine
+* [Werkmaterialen introductieworkshop OpenRefine, KB, 4 juni 2023](https://raw.githubusercontent.com/KBNLwikimedia/OpenRefine-Introduction-Workshop/master/Werkmaterialen%20introductieworkshop%20OpenRefine%204%20juli%202023_OJ27062023.pdf). Hier staan links + data in die we in de workshop gaan gebruiken.
 
-## Context workshop ------------
+## Context workshop
 In deze workshop gaan we aan de slag met de winnaars van de Halewijnprijs
-- Website: https://www.halewijnprijs.nl/  (tabblad Winnaars)
-- Wikipedia: https://nl.wikipedia.org/wiki/Halewijnprijs 
-- Wikidata: https://www.wikidata.org/wiki/Q1570893 
+* Website: https://www.halewijnprijs.nl/  (tabblad Winnaars)
+* Wikipedia: https://nl.wikipedia.org/wiki/Halewijnprijs 
+* Wikidata: https://www.wikidata.org/wiki/Q1570893 
 
 De Halewijnprijs is een Nederlandse literatuurprijs
 - Voorbeeld van een Wikidata-item over een literatuurprijs incl. de winnaars: P.C. Hooft-prijs - https://www.wikidata.org/wiki/Q1379623 
