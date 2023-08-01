@@ -20,16 +20,16 @@ This workshop is suitable for people who
 * want to learn the basics of manipulating, enriching and linking data with this tool, but  
 * who do not necessarily know what "reconciling against Wikidata" means. 
 
+## Workshop outline & resources
+* [Full outline and notes](outline-and-notes.md) of the workshop. This is a detailed list of actions we will be performing during the workshop.
+* Working materials (in Dutch): [Werkmaterialen introductieworkshop OpenRefine, KB, 4 juni 2023](https://raw.githubusercontent.com/KBNLwikimedia/OpenRefine-Introduction-Workshop/master/Werkmaterialen%20introductieworkshop%20OpenRefine%204%20juli%202023_OJ27062023.pdf). This document contains the working materials (links and data) that we will be using during the workshop.
+* Recources: [Overzicht online les- en hulpmaterialen OpenRefine_OJ22062023.pdf](https://raw.githubusercontent.com/KBNLwikimedia/OpenRefine-Introduction-Workshop/master/Overzicht%20online%20les-%20en%20hulpmaterialen%20OpenRefine_OJ22062023.pdf). A selection of useful tutorials, courses, documentation, howtos, videos etc. about Openrefine. Mainly intended for providing references, further reading and more advanced materials for after the workshop.
+
 ## Required preparation
 * Install a recent version of OpenRefine on your machine. It can be downloaded from https://github.com/OpenRefine/OpenRefine/releases. 
 * Create an account on Wikidata - https://www.wikidata.org/w/index.php?title=Special:CreateAccount
 * Please bring your own laptop to this workshop.
 * It would be nice if you have Excel installed as well (but if you haven't, it is not a deal breaker)
-
-## Workshop outline & resources
-* [Full outline and notes](outline-and-notes.md) of the workshop. This is a detailed list of actions we will be performing during the workshop.
-* Working materials (in Dutch): [Werkmaterialen introductieworkshop OpenRefine, KB, 4 juni 2023](https://raw.githubusercontent.com/KBNLwikimedia/OpenRefine-Introduction-Workshop/master/Werkmaterialen%20introductieworkshop%20OpenRefine%204%20juli%202023_OJ27062023.pdf). This document contains the working materials (links and data) that we will be using during the workshop.
-* Recources: [Overzicht online les- en hulpmaterialen OpenRefine_OJ22062023.pdf](https://raw.githubusercontent.com/KBNLwikimedia/OpenRefine-Introduction-Workshop/master/Overzicht%20online%20les-%20en%20hulpmaterialen%20OpenRefine_OJ22062023.pdf). A selection of useful tutorials, courses, documentation, howtos, videos etc. about Openrefine. Mainly intended for providing references, further reading and more advanced materials for after the workshop.
 
 ## Workshop leader
 This workshop is given by [Olaf Janssen](https://www.wikidata.org/wiki/User:OlafJanssen), the Wikimedia coordinator of the [Koninklijke Bibliotheek](https://www.kb.nl/over-ons/experts/olaf-janssen), the national library of the Netherlands. In this role he stimulates and facilitates collaboration between the collections, knowledge, open data and staff of the KB on the one hand, and the projects of the Wikimedia movement, such as Wikipedia, Wikimedia Commons, Wikidata and Wikibase, on the other. He is also active as a volunteer within the community.
