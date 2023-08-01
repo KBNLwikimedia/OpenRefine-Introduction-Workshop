@@ -10,6 +10,12 @@
   * [Overzicht online les- en hulpmaterialen OpenRefine_OJ22062023.pdf](https://raw.githubusercontent.com/KBNLwikimedia/OpenRefine-Introduction-Workshop/master/Overzicht%20online%20les-%20en%20hulpmaterialen%20OpenRefine_OJ22062023.pdf). Een selectie van nuttige tutorials, cursussen, documentatie, howto’s, video’s etc. over Openrefine.
   * [Werkmaterialen introductieworkshop OpenRefine, KB, 4 juni 2023](https://raw.githubusercontent.com/KBNLwikimedia/OpenRefine-Introduction-Workshop/master/Werkmaterialen%20introductieworkshop%20OpenRefine%204%20juli%202023_OJ27062023.pdf). Hier staan links + data in die we in de workshop gaan gebruiken.
 
+## Uitleg over de 4 belangrijke functionaliteiten van OpenRefine 
+* Manipulatie/transformatie van data
+* Reconciliatie tegen Wikidata, en/of andere bronnen, bv. de [Nederlandse Thesaurus van Auteursnamen (NTA)](http://data.bibliotheken.nl/doc/dataset/persons)
+* Extra data ophalen uit Wikidata (of NTA)
+* Uploaden naar Wikidata
+
 ## Context workshop
 In deze workshop gaan we aan de slag met de winnaars van de Halewijnprijs, een Nederlandse literatuurprijs.
 * Website: https://www.halewijnprijs.nl/  (tabblad Winnaars)
@@ -18,12 +24,6 @@ In deze workshop gaan we aan de slag met de winnaars van de Halewijnprijs, een N
 * Voorbeeld van Wikidata-items over literatuurprijzen:
    * Literatuurprijs incl. de winnaars - P.C. Hooft-prijs - https://www.wikidata.org/wiki/Q1379623 
    * Winnaar van een literatuurprijs - Theun de Vries - https://www.wikidata.org/wiki/Q2143934 
-
-## Uitleg over de 4 belangrijke functionaliteiten van OpenRefine 
-* Manipulatie/transformatie van data
-* Reconciliatie tegen Wikidata, VIAF/NTA
-* Extra data ophalen uit Wikidata, VIAF/NTA
-* Uploaden naar Wikidata
 
 ## Werkvormen bij deze workshop
 * Demos door cursusleider
@@ -144,7 +144,7 @@ Licht resultataten toe
 * We hebben nu een lijstje van 8 auteurs zonder geboorteplaats
 
 ## OPTIONEEL: Geboorteplaatsen toevoegen
-* Geboorteplaatsen opzoeken in Wikipedia en andere bronnen
+* Geboorteplaatsen opzoeken in Wikipedia en andere bronnen (zie ook de Werkmaterialen-PDF)
   * Peter Drehmanns = Roermond ([bron](https://nl.wikipedia.org/wiki/Peter_Drehmanns))
   * Fred Papenhove = Den Haag ([bron](https://www.singeluitgeverijen.nl/auteur/fred-papenhove/ )
   * Stijn van der Loo = Eindhoven ([bron](https://www.brabantcultureel.nl/2019/10/13/stijn-van-der-loo-stopt-dementie-scheiden-en-een-midlifecrisis-in-een-verhaal/))
@@ -154,7 +154,7 @@ Licht resultataten toe
   * André Janssens = Sint-Amandsberg ([bron](https://www.dbnl.org/tekst/_ons003198701_01/_ons003198701_01_0063.php))
   * Jan Huyskens = Horn ([bron](http://streektaalzang.nl/strk/limb/limbjhun.htm))
 
-*  Voeg handmatig deze geboortplaatsen toe (of alleen de eerste 4 of zo)
+* Voeg handmatig deze geboortplaatsen toe
 * Reconcilieer deze plaatsen tegen Wikidata (Nederlandse gemeente, of Stad)
 * Pas filtering/facet aan --> Facets --> Knop "Remove all" (links bovenaan)
 * Gereconcilieerde plaatsen staan nu in de totaaltabel
@@ -167,7 +167,7 @@ Licht resultataten toe
 * Kolomnaam = CommonsURL
 
 Je krijgt nu halvegare URLs door de spaties in de bestandsnamen
-* Fix: Edit cells --> Replace --> vervang spatie ( ) door underscore (_)
+* Fix: Edit cells --> Replace --> vervang spatie (" ") door underscore ("_")
 * Klik op een paar URLs om resultaat te checken
 
 ## Reconciliatie tegen de NTA
@@ -176,7 +176,6 @@ Je krijgt nu halvegare URLs door de spaties in de bestandsnamen
 * Reconcile --> Start reconciling --> NTA staat niet standaard in de lijst van recon services
 * Discover services --> https://reconciliation-api.github.io/testbench/ --> Kies NTA (obv Termennetwerk NDE): https://termennetwerk-api.netwerkdigitaalerfgoed.nl/reconcile/http://data.bibliotheken.nl/thesp/sparql 
 * Kies "Reconcile against no particular type"
- 
 * Licht resultaten na reconciliatie toe. Dit zijn dus URLs in het Termennetwerk, niet rechtstreeks van de NTA op data.b.nl
 * Check NTA-suggesties tegen de geboortedatum die we eerder uit Wikidatas hebben opgehaald
 * Kies beste matches voor elke auteur
@@ -207,7 +206,7 @@ We gaan een Wikidata OR schema bouwen
 * Bespreek interface, groene strepen = gereconcilieerde kolommen
 * Add item - https://www.wikidata.org/wiki/Q1570893 (Halewijnprijs)
 * Add statement --> Sleep kolommen naar vakjes. Voeg P1346 (winnaar) met qualifier P585 (jaartal) toe
-* Let op dat je de Winnaars-kolom met de Wikidata-info pakt, niet die met de VIAF/NTA info!! 
+* Let op dat je de Winnaars-kolom met de Wikidata-info pakt, niet die met de NTA info!! 
 * Laat tabbladen Issues en Preview zien
 * Add reference: reference URL (P854) = https://www.halewijnprijs.nl/ 
 * Check in de Preview of alles OK is
