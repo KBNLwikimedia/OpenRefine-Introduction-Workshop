@@ -3,6 +3,8 @@
 
 *A practical 90 minutes workshop (in Dutch) to learn how to work with OpenRefine and Wikidata at a basic level.*
 
+ACTION: Publish this workshop on Zenodo
+
 ## Learning objectives
 <img src="logos/Wikidata-logo-en.svg.png" width="200" align="right"/>
 
