@@ -1,9 +1,11 @@
 # OpenRefine Introduction Workshop
-<img src="logos/OpenRefine_logo_color.png" width="300" align="right"/>
+<img src="logos/OpenRefine_logo_color.png" width="500" align="right"/>
 
 *A practical workshop (in Dutch) to learn how to work with OpenRefine and Wikidata at a basic level.*
 
 ## Learning objectives
+<img src="logos/Wikidata-logo-en.svg.png" width="200" align="right"/>
+
 [OpenRefine](https://openrefine.org/) is a well-known tool for editing, enriching and manipulating data. It is widely used within the Wikimedia community to add data to [Wikidata](https://www.wikidata.org/).
 
 In this practial workshop you will learn the basics of working with OpenRefine to manipulate data and add it to Wikidata. You will learn 
@@ -33,6 +35,8 @@ This workshop is suitable for people who
 This workshop is given by [Olaf Janssen](https://www.wikidata.org/wiki/User:OlafJanssen), the Wikimedia coordinator of the [Koninklijke Bibliotheek](https://www.kb.nl/over-ons/experts/olaf-janssen), the national library of the Netherlands. In this role he stimulates and facilitates collaboration between the collections, knowledge, open data and staff of the KB on the one hand, and the projects of the Wikimedia movement, such as Wikipedia, Wikimedia Commons, Wikidata and Wikibase, on the other. He is also active as a volunteer within the community.
 
 If you are interested in this workshop, feel free to contact Olaf via olaf.janssen(at)kb.nl 
+
+<img src="logos/android-chrome-192x192.jpg" width="192" align="right"/>
 
 ## Workshop instances
 This workshop was given for 
