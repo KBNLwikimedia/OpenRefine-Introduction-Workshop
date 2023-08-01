@@ -30,10 +30,8 @@ In deze workshop gaan we aan de slag met de winnaars van de Halewijnprijs, een N
 * Simultaan meedoen door cursisten
 * Zelfstandige opdrachten door cursisten
 
-Tip: Maak 5G Wifi access point van je smartphone om slechte KB-wifi te omzeilen.
-
 ##  Checks, ready to go?
-* Wifi werkt?
+* Wifi werkt? Tip: Maak 5G Wifi access point van je smartphone om brakke KB-wifi te omzeilen.
 * Laptop opgeladen/aan de voeding? 
 * [PDF Werkmaterialen introductieworkshop OpenRefine](https://raw.githubusercontent.com/KBNLwikimedia/OpenRefine-Introduction-Workshop/master/Werkmaterialen%20introductieworkshop%20OpenRefine%204%20juli%202023_OJ27062023.pdf) bij de hand?
 * Start OpenRefine op
