@@ -3,7 +3,7 @@
 
 <img src="logos/OpenRefine_logo_color.png" width="300" align="right"/>
 
-* Korte introductie over deze workshop
+* Korte introductie over [deze workshop](README.md).
 * Korte achtergrond over de cursusleider (Olaf Janssen, KB) - Weet zelf het nodige, maar ben zeker geen volleerd OpenRefine-expert. 
 * Twee documenten bij deze workshop:
   * [Overzicht online les- en hulpmaterialen OpenRefine_OJ22062023.pdf](https://raw.githubusercontent.com/KBNLwikimedia/OpenRefine-Introduction-Workshop/master/Overzicht%20online%20les-%20en%20hulpmaterialen%20OpenRefine_OJ22062023.pdf). Een selectie van nuttige tutorials, cursussen, documentatie, howto’s, video’s etc. over Openrefine.
