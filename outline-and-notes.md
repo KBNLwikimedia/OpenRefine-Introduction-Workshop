@@ -92,6 +92,7 @@ We gaan nu reconcilieren tegen Wikidata, d.w.z.
 * Namen opzoeken in Wikidata, van (naam)strings naar things (Wikidata Q-items)
 * Nadat de koppeling gelegd is, kun je ook extra/externe data ophalen uit Wikidata.
 
+Acties:
 * Kolom Winnaar --> Reconcile --> Start reconciling
 * Als het goed is staat Wikidata (EN) standaard gelecteerd als recon-service. Zo niet --> Discover services + Add standard service. 
 * Toon https://reconciliation-api.github.io/testbench/
@@ -100,7 +101,7 @@ We gaan nu reconcilieren tegen Wikidata, d.w.z.
 * Kies Q5 (mens) als type, want schrijvers zijn mensen
 * Start reconciling
 
-* Je krijgt nu allerlei matchsuggesties, licht toe
+Je krijgt nu allerlei matchsuggesties, licht toe
 * Controleer steeksproefsgewijs de 100% matches, want ook deze kunnen fouten bevatten
 * Leg uit hoe je bepaalt welke suggestie de juiste is a.d.h.v. mouse-overs en inspectie Wikidata-items
 * Let op Otto de Kat! Pseudoniem van JG Gaarlandt (dus niet de kunstschilder!) 
@@ -109,26 +110,24 @@ We gaan nu reconcilieren tegen Wikidata, d.w.z.
 * Hub Beurkens = Huub Beurkens, na "Search for match" en controle van https://nl.wikipedia.org/wiki/Huub_Beurskens#Prijzen
 
 OK, we hebben nu 32 rijen met gereconcilde winnaars!
-
 * Haal manifeste Qids op: Reconcile --> Add entity identifiers column. Kolomnaam = WDqid_winnaar
 * Deze kolom met Q-ids kun je ook reconnen tegen Wikidata! --> Laat zien  --> Kolom behouden, want straks gaan we de andere kolom 'Winnaar' leeggooien om de reconnen tegen de NTA
 * Haal recon matches weer weg: Reconcile --> Actions --> Clear reconcilation data
 
 ## Extra/externe data ophalen uit Wikidata
 We willen nu extra data van deze schrijvers ophalen uit Wikidata
-- Afbeelding: https://www.wikidata.org/wiki/Property:P18
-- Geboorteplaats https://www.wikidata.org/wiki/Property:P19  
-- Geboortedatum: https://www.wikidata.org/wiki/Property:P569
-- Beroep: https://www.wikidata.org/wiki/Property:P106 
+* Afbeelding: https://www.wikidata.org/wiki/Property:P18
+* Geboorteplaats https://www.wikidata.org/wiki/Property:P19  
+* Geboortedatum: https://www.wikidata.org/wiki/Property:P569
+* Beroep: https://www.wikidata.org/wiki/Property:P106 
 
 Edit column --> Add column from reconciled values
 
-Licht resultataten toe, 
-* Van 32 naar 81 rijen, want P106-beroep heeft meerder waardes
-* Nog steeeds 32 records 
-* Afbeelding = "Eva Meijer 2018.jpg" en bijbehorende URL op Commons - https://commons.wikimedia.org/wiki/File:Eva_Meijer_2018.jpg
-* Werk verder in record-view
-Kort geboortedatum in van 1962-01-01T00:00:00Z naar 1962-01-01. Dit doe je als volgt: Edit column --> split into several columns, separator = T, remove 2e kolom, renmame kolom 'geboortedatum 1' --> 'geboortedatum'
+Licht resultataten toe
+* Row view vs. Record view: Van 32 naar 81 rijen, want P106-beroep heeft meerder waardes, maar nog steeeds 32 records 
+* Afbeelding = "Eva Meijer 2018.jpg" en bijbehorende URL op Commons = https://commons.wikimedia.org/wiki/File:Eva_Meijer_2018.jpg
+* Werk verder in Record view
+* Kort geboortedatum in van 1962-01-01T00:00:00Z naar 1962-01-01. Dit doe je als volgt: Edit column --> Split into several columns, separator = T, remove 2e kolom, renmame kolom 'geboortedatum 1' --> 'geboortedatum'
 
 ##  Meervoudige cellen samen tot lijst 
 Voeg meervoudige beroepen samen tot lijst, met " - " als separator
