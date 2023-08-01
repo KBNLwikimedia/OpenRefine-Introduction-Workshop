@@ -195,7 +195,7 @@ Je krijgt nu halvegare URLs door de spaties in de bestandsnamen
 ## Winaars toevoegen aan Q-item Halewijn-prijs
 We willen (de Qitems van) alle winnaars toevegen aan Q-item over Halewijn-prijs
 * Laat eerst voorbeelditem met prijswinnaars zien: P.C. Hooftprijs - https://www.wikidata.org/wiki/Q1379623
-* Bespreek opbouw van dit item  
+* Bespreek opbouw van dit voorbeelditem  
 * Eigenschap 'Winnaar': https://www.wikidata.org/wiki/Property:P1346
 * Qualifier: tijdstip (jaartal) = https://www.wikidata.org/wiki/Property:P585
 * Dit datastructuurtje willen we ook voor de Halewijnprijs nabouwen
@@ -214,8 +214,9 @@ We gaan een Wikidata OR schema bouwen
 ## Uploaden naar Wikidata
 * Extensions Wikibase (rechtsboven) --> Upload edits to Wikibase
 * Login-scherm met Wikimedia credentials
-* Cursisten hebben account aangemaakt (maar zijn die al wel autoconfirmed!!??)
-* Laat 1 vabn de cusisten dit proberen, als het niet werkt kan de cursusleider de upload doen!
+* Cursisten hebben voor de workshop al een account aangemaakt (maar zijn die al wel autoconfirmed!!??)
+
+**Laat 1 van de cusisten de upload proberen**, als het niet werkt kan de cursusleider de upload doen.
 
 
 
