@@ -1,33 +1,33 @@
 # OpenRefine Introduction Workshop
 <img src="logos/OpenRefine_logo_color.png" width="500" align="right"/>
 
-*A practical workshop (in Dutch) to learn how to work with OpenRefine and Wikidata at a basic level.*
+*A practical 90 minutes workshop (in Dutch) to learn how to work with OpenRefine and Wikidata at a basic level.*
 
 ## Learning objectives
 <img src="logos/Wikidata-logo-en.svg.png" width="200" align="right"/>
 
 [OpenRefine](https://openrefine.org/) is a well-known tool for editing, enriching and manipulating data. It is widely used within the Wikimedia community to add data to [Wikidata](https://www.wikidata.org/).
 
-In this practial workshop you will learn the basics of working with OpenRefine to manipulate data and add it to Wikidata. You will learn 
+In this practial 90 minutes workshop you will learn the basics of working with OpenRefine to manipulate data and add it to Wikidata. You will learn 
 * how to create an OpenRefine project,
 * how to manipulate and enrich data, and
 * how to connect this data to databases such as Wikidata, [NTA](http://data.bibliotheken.nl/doc/dataset/persons) or [VIAF](https://www.viaf.org/).
 
 ## Target audience
 This workshop is suitable for people who
-* have some experience in working with (cultural heritage) data, but
-* have not used OpenRefine before, but
-* want to learn the basics of manipulating, enriching and linking data with this tool, but 
+* have some experience in working with (cultural heritage) data, 
+* have not used OpenRefine before, 
+* want to learn the basics of manipulating, enriching and linking data with this tool, but  
 * who do not necessarily know what "reconciling against Wikidata" means. 
 
 ## Required preparation
 * Install a recent version of OpenRefine on your machine. It can be downloaded from https://github.com/OpenRefine/OpenRefine/releases. 
 * Create an account on Wikidata - https://www.wikidata.org/w/index.php?title=Special:CreateAccount
 * Please bring your own laptop to this workshop.
-* It would be nice if you have Excel installed as well (but if you haven't, its not a deal breaker)
+* It would be nice if you have Excel installed as well (but if you haven't, it is not a deal breaker)
 
 ## Workshop outline & resources
-* [Full outline and notes](outline-and-notes.md) of the workshop
+* [Full outline and notes](outline-and-notes.md) of the workshop. This is a detailed list of actions we will be performing during the workshop.
 * Working materials (in Dutch): [Werkmaterialen introductieworkshop OpenRefine, KB, 4 juni 2023](https://raw.githubusercontent.com/KBNLwikimedia/OpenRefine-Introduction-Workshop/master/Werkmaterialen%20introductieworkshop%20OpenRefine%204%20juli%202023_OJ27062023.pdf). This document contains the working materials (links and data) that we will be using during the workshop.
 * Recources: [Overzicht online les- en hulpmaterialen OpenRefine_OJ22062023.pdf](https://raw.githubusercontent.com/KBNLwikimedia/OpenRefine-Introduction-Workshop/master/Overzicht%20online%20les-%20en%20hulpmaterialen%20OpenRefine_OJ22062023.pdf). A selection of useful tutorials, courses, documentation, howtos, videos etc. about Openrefine. Mainly intended for providing references, further reading and more advanced materials for after the workshop.
 
