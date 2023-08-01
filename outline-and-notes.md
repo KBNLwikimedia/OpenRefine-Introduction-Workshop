@@ -121,7 +121,7 @@ We willen nu extra data van deze schrijvers ophalen uit Wikidata
 * Geboortedatum: https://www.wikidata.org/wiki/Property:P569
 * Beroep: https://www.wikidata.org/wiki/Property:P106 
 
-Edit column --> Add column from reconciled values
+Edit column --> Add column from reconciled values. Leg dialoogscherm uit. 
 
 Licht resultataten toe
 * Row view vs. Record view: Van 32 naar 81 rijen, want P106-beroep heeft meerder waardes, maar nog steeeds 32 records 
