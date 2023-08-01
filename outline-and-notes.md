@@ -3,14 +3,15 @@
 
 <img src="logos/OpenRefine_logo_color.png" width="300" align="right"/>
 
-## Outline workshop
 * Korte introductie over deze workshop
 * Korte achtergrond over de cursusleider (Olaf Janssen, KB) - Weet zelf het nodige, maar ben zeker geen volleerd OpenRefine-expert. 
 * Twee documenten bij deze workshop:
   * [Overzicht online les- en hulpmaterialen OpenRefine_OJ22062023.pdf](https://raw.githubusercontent.com/KBNLwikimedia/OpenRefine-Introduction-Workshop/master/Overzicht%20online%20les-%20en%20hulpmaterialen%20OpenRefine_OJ22062023.pdf). Een selectie van nuttige tutorials, cursussen, documentatie, howto’s, video’s etc. over Openrefine.
   * [Werkmaterialen introductieworkshop OpenRefine, KB, 4 juni 2023](https://raw.githubusercontent.com/KBNLwikimedia/OpenRefine-Introduction-Workshop/master/Werkmaterialen%20introductieworkshop%20OpenRefine%204%20juli%202023_OJ27062023.pdf). Hier staan links + data in die we in de workshop gaan gebruiken.
 
-## Uitleg over de 4 belangrijke functionaliteiten van OpenRefine 
+## Uitleg over de 4 belangrijke functionaliteiten van OpenRefine
+<img src="logos/Wikidata-logo-en.svg.png" width="200" align="right"/>
+
 * Manipulatie/transformatie van data
 * Reconciliatie tegen Wikidata, en/of andere bronnen, bv. de [Nederlandse Thesaurus van Auteursnamen (NTA)](http://data.bibliotheken.nl/doc/dataset/persons)
 * Extra data ophalen uit Wikidata (of NTA)
