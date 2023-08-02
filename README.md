@@ -3,8 +3,6 @@
 
 *A practical 90 minutes workshop (in Dutch) to learn how to work with OpenRefine and Wikidata at a basic level.*
 
-ACTION: Publish this workshop on Zenodo
-
 ## Learning objectives
 <img src="logos/Wikidata-logo-en.svg.png" width="200" align="right"/>
 
@@ -47,6 +45,9 @@ This workshop was given for
  
 ## Licensing
 All workshop materials are released under the Creative Commons [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.en) license. Attribution: Olaf Janssen/KB, national library of the Netherlands. 
+
+## Other versions
+The materials of this workshop are also published on Zenodo: https://zenodo.org/record/8207914 / https://doi.org/10.5281/zenodo.8207914  
 
 ## Latest updates
 This page was last updated on 3 August 2023.
