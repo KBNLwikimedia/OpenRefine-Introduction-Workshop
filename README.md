@@ -46,7 +46,7 @@ This workshop was given for
 * ...
  
 ## Licensing
-All workshop materials are released into the public domain under the [Creative Commons Zero v1.0 Universal](LICENSE) and can therefore be reused freely and openly. Attribution is not required, but still appreciated.
+All workshop materials are released under the Creative Commons [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.en) license. Attribution: Olaf Janssen/KB, national library of the Netherlands. 
 
 ## Latest updates
 This page was last updated on 3 August 2023.
