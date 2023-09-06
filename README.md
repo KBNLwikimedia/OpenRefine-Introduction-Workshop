@@ -1,4 +1,4 @@
-# OpenRefine-Wikibase Introduction Workshop
+# OpenRefine-Wikidata Introduction Workshop
 <img src="logos/OpenRefine_logo_color.png" width="500" align="right"/>
 
 *A practical 90 minutes workshop (in Dutch) to learn how to work with OpenRefine and Wikidata at a basic level.*
