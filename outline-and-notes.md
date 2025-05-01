@@ -1,3 +1,5 @@
+[<< Back to the index of this workshop](https://kbnlwikimedia.github.io/OpenRefine-Introduction-Workshop/)
+
 # OpenRefine Introduction Workshop - Outline and notes (in Dutch)
 *Latest update: 3 August 2023*
 

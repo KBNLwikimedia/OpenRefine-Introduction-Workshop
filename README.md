@@ -1,3 +1,5 @@
+[<< Back to workshops and courses index](https://kbnlwikimedia.github.io/workshops-courses)
+
 # OpenRefine-Wikidata Introduction Workshop
 <img src="logos/OpenRefine_logo_color.png" width="500" align="right"/>
 
