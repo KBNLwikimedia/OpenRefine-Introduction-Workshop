@@ -1,4 +1,9 @@
-[<< Back to the index of this workshop](https://kbnlwikimedia.github.io/OpenRefine-Introduction-Workshop/)
+<table width="100%" border="0"><tr><td align="left">
+<a href="https://kbnlwikimedia.github.io/workshops-courses"><< Back to workshops and courses index</a>
+</td><td align="right">
+<a href="https://github.com/KBNLwikimedia/OpenRefine-Introduction-Workshop" target="_blank">>> To the Github repo of this page</a>
+</td></tr></table>
+<hr/>
 
 # OpenRefine Introduction Workshop - Outline and notes (in Dutch)
 *Latest update: 3 August 2023*
